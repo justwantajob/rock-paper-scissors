@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: rgb(12, 2, 26);
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Figtree', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.player__move-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: none;
+  background: transparent;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+button img {
+  width: 100px;
+  height: 100px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+button:active {
+  transform: scale(1);
+  filter: brightness(50%);
+}
+
+.play-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.rock-button {
+  border: 5px solid rgb(0, 89, 255);
+}
+
+.paper-button {
+  border: 5px solid rgb(255, 0, 89);
+}
+
+.scissors-button {
+  border: 5px solid orange;
+}
+
+.rock-button:hover {
+  box-shadow: 0 0 10px rgb(0, 89, 255);
+}
+
+.paper-button:hover {
+  box-shadow: 0 0 10px rgb(255, 0, 89);
+}
+
+.scissors-button:hover {
+  box-shadow: 0 0 10px orange;
+}
+
+.score__board {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  gap: 2.5rem;
+}
+
+.player__score-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.player__name {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 900;
+}
+
+.player__score {
+  font-size: 200;
+}
+
+.computer__score-container {
+  display: flex;
+  gap: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.computer__name {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 900;
+}
+
+.tie__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.tie__name {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 900;
+}
+
+.reset-button {
+  padding: 15px 20px;
+  background: white;
+  color: rgb(12, 2, 26);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.reset-button:hover {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
